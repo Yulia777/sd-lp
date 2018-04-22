@@ -1,0 +1,43 @@
+.button{
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 0;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px 15px;
+}
+.form-blank {
+  padding: 20px 0;
+  &__wrap {
+    display: block;
+    text-align: center;
+  }
+
+  @each $field in (field, message) {
+    &__#{$field} {
+      border: 1px solid #959595;
+      border-radius: 20px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+      &::-webkit-input-placeholder {color: black;}
+      &::-moz-placeholder          {color: black;}/* Firefox 19+ */
+      &:-moz-placeholder           {color: black;}/* Firefox 18- */
+      &:-ms-input-placeholder      {color: black;}
+    }
+  }
+
+  &__message{
+    height: 80px;
+    outline: none;
+    border-width: 1px !important;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}

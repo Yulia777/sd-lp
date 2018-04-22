@@ -1,0 +1,40 @@
+.presentation {
+  display: block;
+  padding: $padding-screen;
+  text-align: center;
+  background-color: $fone;
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    .presentation {
+      &__title {
+        font-size: $subtitle;
+        text-align: center;
+        margin: 0 auto;
+        line-height: $line-height;
+      }
+      &__desc {
+        text-align: center;
+        font-size: $subtitle-min;
+        margin: auto;
+        padding: $titles;
+        line-height: $line-height;
+      }
+      &__btn {
+        height: 60px!important;
+        &:before {
+          content: '';
+          background: url(/images/svg/curve-arrow.svg) no-repeat;
+          position: absolute;
+          display: block;
+          left: 37%;
+          background-size: contain;
+          width: 40px;
+          height: 40px;
+          transform: rotate(180deg);
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+}

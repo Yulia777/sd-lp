@@ -1,0 +1,55 @@
+.recommendations {
+  padding: $padding-screen;
+  background-color: $fone;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    margin: 0;
+    &:after {
+      display: block;
+    }
+  }
+  &__desc {
+    text-align: center;
+    font-size: $subtitle-min;
+    max-width: 450px;
+    margin: auto;
+    padding: $titles;
+  }
+  .services {
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      padding-bottom: 60px;
+      .service {
+        width: 22%;
+        cursor: pointer;
+        border-right: 2px solid $border;
+        padding: 20px 60px;
+        &:last-child {
+          border-right: 0;
+        }
+        img {
+          height: 100px;
+          width: 100px;
+        }
+        transition: transform 0.3s ease;
+        &:hover{
+          transform: scale(1.1);
+        }
+        &__desc {
+          font-weight: 600;
+        }
+      }
+    }
+    &__btn {
+      text-align: center;
+      .btn {
+        padding: 0 60px;
+        height: 60px;
+      }
+    }
+  }
+}

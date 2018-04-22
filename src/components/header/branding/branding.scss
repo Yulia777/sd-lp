@@ -1,0 +1,52 @@
+.branding {
+  color: $dark-text;
+  display: block;
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $padding-first-screen;
+  }
+  &__title {
+    max-width: 650px;
+    font-family: $bold;
+    font-size: $title;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &__desc {
+    font-size: $subtitle-min;
+    font-weight: 400;
+    max-width: 600px;
+    line-height: $line-height;
+    margin-bottom: 0;
+  }
+  &__btn {
+    padding: 0 60px!important;
+    height: 60px!important;
+    margin-top: 45px;
+  }
+  &__item {
+    padding: 50px 0 0 0;
+    &:last-child {
+      padding: 100px 50px 100px 0;
+    }
+    .advantages {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+      &__img {
+        width: 50px;
+        height: 50px;
+      }
+      &__desc {
+        font-size: 20px;
+        width: 230px;
+        margin-left: 35px;
+        margin-top: 0;
+        line-height: $line-height;
+      }
+    }
+  }
+}

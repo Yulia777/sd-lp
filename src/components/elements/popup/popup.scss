@@ -1,0 +1,141 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  display: none;
+  z-index: 1000;
+  &--cta {
+    display: block;
+  }
+  &--banner {
+    display: block;
+  }
+  .popup-form {
+    margin: auto;
+    top: calc(50% - 136px);
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 300px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    z-index: 9999;
+    animation: popupShowAnimation 1 0.3s linear;
+    &--experts {
+      top: calc(50% - 295px);
+    }
+    &--banner {
+      background: linear-gradient(195deg, #1b1b1b 55%, #3f3f3f);
+      color: white;
+      padding: 80px;
+      width: 50%;
+      iframe {
+        overflow: hidden;
+        height: 93px !important;
+      }
+      .popup-form__close {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      .banner {
+        &-text {
+          font-family: $regular, sans-serif;
+          color: white;
+          font-size: 40px;
+          span {
+            color: #4CAF83;
+            text-transform: uppercase;
+          }
+          img {
+            margin-left: 10px;
+            width: 45px;
+            vertical-align: baseline;
+          }
+        }
+      }
+    }
+    &__notification {
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      border: 1px solid $color-btn;
+      padding: 5px 6px;
+      background-color: $color-btn;
+      border-radius: 5px;
+      margin: 5px 0 -10px 0;
+      animation: notifAnimation 0.3s 1 linear;
+      h2 {
+        margin-top: 10px;
+      }
+      &--error {
+        background-color: #e53835;
+      }
+    }
+    &__close {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: rgb(199, 29, 26);
+      cursor: pointer;
+      font-family: $regular, sans-serif;
+      transition: color 0.3s ease-in-out;
+      z-index: 2;
+      &--cta {
+        top: -2px;
+        right: -3px;
+      }
+      &:hover {
+        color: black;
+      }
+    }
+    p {
+      font-family: $regular, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      margin: 0;
+      color: black;
+    }
+    span {
+      color: rgb(199, 29, 26);
+    }
+    textarea {
+      height: 90px;
+    }
+    input[type="submit"] {
+      display: block;
+      width: 70%;
+      margin: 15px auto 0 auto;
+      text-align: center;
+      padding: 14px 0;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  .form-cost{
+    &__field{
+      margin: 0 0 5px 0;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+
+@keyframes popupShowAnimation {
+  0%{transform: scale(0)}
+  80%{transform: scale(1.2)}
+  100%{transform: scale(1)}
+}
+
+@keyframes notifAnimation {
+  from{height: 0;}
+  to{height: auto;}
+}

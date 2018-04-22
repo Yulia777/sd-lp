@@ -1,0 +1,12 @@
+.clients {
+  display: block;
+  padding: $padding-screen;
+  text-align: center;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 900px;
+    line-height: $line-height;
+  }
+}

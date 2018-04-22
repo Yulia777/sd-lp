@@ -1,0 +1,16 @@
+@mixin heart-icon{
+  content: '\f004';
+}
+
+.icon{
+  &::before{
+    font-family: FontAwesome, sans-serif;
+  }
+  &-heart{
+    &::before{
+      @include heart-icon;
+      font-size: 30px;
+      color: red;
+    }
+  }
+}

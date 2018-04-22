@@ -1,0 +1,50 @@
+.questions {
+  padding: $padding-screen;
+  background-color: $fone;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    margin: 0;
+    &:after {
+      display: block;
+    }
+  }
+  &__desc {
+    text-align: center;
+    font-size: $subtitle-min;
+    max-width: 630px;
+    margin: auto;
+    padding: $titles;
+    line-height: $line-height;
+  }
+  &__form {
+    max-width: 630px;
+    margin: auto;
+    .field {
+      color: #000000;
+      border: 1px solid #333333;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      height: 60px;
+      padding: 0 20px;
+      font-size: 16px;
+      line-height: 1.33;
+      width: 100%;
+      box-sizing: border-box;
+      outline: none;
+      margin: 5px 0 30px 0;
+      &--textarea {
+        height: 100px;
+      }
+    }
+    label {
+      font-size: 20px;
+    }
+    .btn {
+      height: 60px!important;
+      padding: 0 60px!important;
+      display: block;
+      margin: auto;
+    }
+  }
+}

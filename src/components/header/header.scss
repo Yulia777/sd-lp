@@ -1,0 +1,53 @@
+.header {
+  background-color: $fone;
+  &__background {
+    padding: 25px 0;
+    width: 100%;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    &--img {
+      max-width: 200px;
+      width: 200px;
+    }
+  }
+  .btn__call {
+    font-size: $small-text;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+  }
+  .information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 40px;
+    font-size: $small-text;
+    &:last-child {
+      margin-right: 0;
+    }
+    &__title {
+      font-family: $bold;
+    }
+    &__item {
+      padding-left: 10px;
+      &:first-child {
+        margin: 0;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+      p {
+        margin: 0;
+        font-weight: 600;
+        line-height: 1.55;
+      }
+    }
+  }
+}

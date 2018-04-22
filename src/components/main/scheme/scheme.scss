@@ -1,0 +1,121 @@
+.scheme {
+  display: block;
+  padding: $padding-screen;
+  text-align: center;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    margin: 0 auto;
+    line-height: $line-height;
+  }
+  &__desc {
+    text-align: center;
+    font-size: $subtitle-min;
+    margin: auto;
+    padding: $titles;
+    line-height: $line-height;
+  }
+  .strategy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__item {
+      height: 320px;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      height: 150px;
+      &__num {
+        border-radius: 50%;
+        border: 2px solid;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+        p {
+          position: relative;
+          bottom: 15px;
+        }
+      }
+      &__desc {
+        width: 416px;
+        line-height: $line-height;
+        font-size: 18px;
+        span {
+          font-size: 22px;
+          font-family: $bold;
+          line-height: 2.3;
+        }
+      }
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: auto;
+      padding-top: 130px;
+    }
+    &__first {
+      .strategy {
+        &__item {
+          border-right: 2px solid;
+          &:last-child {
+            height: 200px;
+          }
+          .content {
+            &__desc {
+              text-align: right;
+              margin-top: -10px;
+            }
+            &__num {
+              position: relative;
+              left: 5.5%;
+              top: -60px;
+              background: black;
+              color: white;
+              border: 4px solid white;
+              font-size: 20px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+    &__second {
+      .strategy {
+        &__item {
+          .content {
+            padding-top: 120px;
+            &__num {
+              position: relative;
+              right: 6%;
+              top: -18px;
+              background: black;
+              color: white;
+              border: 4px solid white;
+              font-size: 20px;
+              font-weight: bold;
+
+            }
+            &__desc {
+              margin-top: 35px;
+              text-align: left;
+            }
+          }
+          &:last-child {
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+  &__btn {
+    height: 60px!important;
+    padding: 0 60px!important;
+    margin-top: 160px;
+  }
+}

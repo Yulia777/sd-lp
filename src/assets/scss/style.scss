@@ -1,0 +1,83 @@
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "icons";
+@import "../../components/header/header";
+@import "../../components/header/branding/branding";
+@import "../../components/main/categories/categories";
+@import "../../components/main/recommendations/recommendations";
+@import "../../components/main/examples/examples";
+@import "../../components/main/visualization/visualization";
+@import "../../components/main/clients/clients";
+@import "../../components/main/presentation/presentation";
+@import "../../components/main/scheme/scheme";
+@import "../../components/main/questions/questions";
+@import "../../components/elements/popup/popup";
+@import "../../components/elements/forms/form-blank/form-blank";
+
+
+body{
+  @include main-theme-font-regular;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.top {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  opacity: .8;
+  padding: 15px;
+  &:before {
+    font-family: $font-awesome;
+    content: "\F106";
+  }
+}
+
+.app{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  height: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 1px solid $color-btn;
+  border-radius: 30px;
+  background: $color-btn;
+  font-size: $text;
+  font-weight: 600;
+  color: $light-text;
+  cursor: pointer;
+  &:hover {
+    background: $btn-main-hover;
+    transition: 0.8s;
+  }
+}
+.container {
+  margin: 0 auto;
+}
+
+
+@import "../../assets/scss/tablet/tablet";
+@import "../../assets/scss/mobile/mobile";
+
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}

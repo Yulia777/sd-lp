@@ -1,0 +1,44 @@
+.visualization {
+  display: block;
+  padding: $padding-screen;
+  text-align: center;
+  background-color: $fone;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
+    line-height: $line-height;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+    &__item {
+      &:first-child {
+        width: 56%;
+      }
+      &:last-child {
+        width: 40%;
+      }
+      .image {
+        img {
+          width: 460px;
+          height: 250px;
+        }
+      }
+    }
+    &__desc {
+      font-size: $subtitle-min;
+      line-height: $line-height;
+    }
+  }
+
+  &__btn {
+    padding: 0 60px!important;
+    height: 60px!important;
+    margin-top: 45px;
+  }
+}

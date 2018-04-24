@@ -1,0 +1,120 @@
+@media screen and (min-width:320px)and (max-width:480px) {
+  .header {
+    &__wrap {
+      flex-direction: column;
+    }
+    &__contacts {
+      flex-direction: column;
+    }
+    &__logo {
+      &--img {
+        margin: auto;
+        display: block;
+      }
+    }
+    .information {
+      justify-content: center;
+      &__item {
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .btn {
+      &__call  {
+        width: 50%;
+        margin: 10px auto;
+      }
+    };
+  }
+  .branding {
+    width: 100%;
+    padding: 0 10px;
+    &__title {
+      font-size: $title-mb;
+    }
+    &__wrap {
+      padding: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__item {
+      padding: 0;
+      &:last-child {
+        padding: 20px 0;
+        margin: auto;
+      }
+      .advantages {
+        margin-bottom: 0;
+        &__desc {
+          font-size: $text-mb;
+        }
+      }
+    }
+    &__desc {
+      font-size: $text-mb;
+    }
+    &__btn {
+      width: 80%;
+    }
+  }
+  .categories {
+    padding: 40px 10px;
+    &__title {
+      font-size: $title-mb;
+    }
+    &__desc {
+      font-size: $text-mb;
+      max-width: 100%;
+      padding: 30px 0 20px 0;
+    }
+    .goods {
+      &__item {
+        flex-direction: column;
+        align-items: center;
+        .good {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .recommendations {
+    padding: 40px 10px;
+    &__title {
+      font-size: $title-mb;
+    }
+    &__desc {
+      max-width: 100%;
+      padding: 30px 0;
+      font-size: $text-mb;
+    }
+    .services {
+      &__item {
+        flex-direction: column;
+        .service {
+          width: 100%;
+          padding: 0;
+        }
+      }
+      &__btn {
+        .btn {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen
+and (min-width : 481px)
+and (max-width : 590px) {}
+
+/*rotate mobile:start*/
+@media screen
+and (min-width : 591px)
+and (max-width : 759px) {}
+/*rotate mobile:end*/
+
+@media screen
+and (min-width : 760px)
+and (max-width : 1080px) {}

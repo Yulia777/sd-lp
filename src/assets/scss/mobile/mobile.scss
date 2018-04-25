@@ -94,6 +94,7 @@
         .service {
           width: 100%;
           padding: 0;
+          border-right: 0;
         }
       }
       &__btn {
@@ -101,6 +102,58 @@
           width: 80%;
         }
       }
+    }
+  }
+  .examples {
+    padding: 40px 10px;
+    &__title {
+      font-size: $title-mb;
+    }
+    &__desc {
+      padding: 30px 0;
+      font-size: $text-mb;
+    }
+    .goods {
+      &__item {
+        flex-direction: column;
+        .good {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .visualization {
+    padding: 40px 10px;
+    &__title {
+      font-size: $title-mb;
+    }
+    .content {
+      flex-direction: column;
+      padding: 20px 0;
+      &__desc {
+        font-size: $text-mb;
+      }
+      &__item {
+        &:first-child {
+          width: 100%;
+        }
+        &:last-child {
+          width: 100%;
+        }
+        .image img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    &__btn {
+      margin-top: 0;
+    }
+  }
+  .clients {
+    padding: 40px 10px;
+    &__title {
+      font-size: $title-mb;
     }
   }
 }
